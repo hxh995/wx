@@ -1,0 +1,28 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+
+<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+  <swiper-item>
+    <view class='info'>
+     
+      <image src='../../images/成果转化.png'></image>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='info'>
+      
+      <text>没有未关注</text>
+    </view>
+  </swiper-item>
+  <swiper-item>
+  <view>
+  <view wx:for='{{ne}}' >
+    <text>{{item.count}}\n</text>
+    <text>{{item._openid}}</text>
+  </view>
+</view>
+  
+  </swiper-item>
+</swiper>

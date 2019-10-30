@@ -1,0 +1,50 @@
+<view class='all'>
+<view class='adduserorder'>
+ 
+
+ <button catchtap="handleClicks"  class="circle"id='1'>
+ <image mode='scaleToFill' src='../../images/融资.png' plain='true' class='image' ></image>
+ </button>
+ 
+ <button type="handleClicks" catchtap="handleClicks" class="circle"id='2'>
+ <image mode='aspectFill' src='../../images/论文汇编.png' plain='true' class='image'></image>
+ </button>
+ 
+ 
+ <button type="handleClicks" catchtap="handleClicks" class="circle"id='3'>
+ <image mode='aspectFill' src='../../images/知识竞赛.png' plain='true' class='image'></image>
+ </button>
+ 
+ <button type="handleClicks" catchtap="handleClicks" class="circle" id='4'>
+ <image mode='aspectFill' src='../../images/专利.png' plain='true' class='image'></image>
+ </button>
+ 
+ 
+</view>
+ 
+<view class='textls'>
+<view class='viewclass'>
+    <text class='viewview'>融资</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>论文</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>竞赛</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>专利</text>
+</view>
+
+</view>
+
+
+
+
+</view>
+<view>
+  <view wx:for='{{ne[1]}}'>
+    <text>{{item.count}}\n</text>
+    <text>{{item._openid}}</text>
+  </view>
+</view>

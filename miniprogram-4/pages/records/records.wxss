@@ -1,0 +1,48 @@
+
+.circle{
+ 
+    width: 75rpx;
+    height: 70rpx;
+    border: 0 solid  ;
+    color:#00FFFF;
+    border-radius: 250px; 
+   font-size:0;
+}
+.image{
+  top: 20rpx;
+  margin-left: -22rpx;
+  
+   display: flex;
+   width: 70rpx;
+    height: 70rpx;
+    
+}
+ 
+ 
+
+.adduserorder{
+ margin-top: 30rpx;
+display: flex;
+flex-direction:row;
+justify-content:flex-end;
+
+}.viewclass{
+  
+  width: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}.textls{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.all{
+  position: fixed;
+  bottom: 850rpx;
+  left:0;
+  right:0;
+  top:0rpx;
+  
+}

@@ -1,0 +1,35 @@
+<view class="container">
+    <view class="userinfo" wx:if="{{isLogin}}">
+      <!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+      <open-data type="userAvatarUrl" class="userinfo-avatar"></open-data>
+      <open-data type="userNickName" class="userinfo-nickname"></open-data>
+    </view>
+    <view class="userinfo" wx:else>
+      <!-- 需要使用 button 来授权登录 -->
+      <button type="primary" size="mini" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="userinfo-login">授权登录</button>
+      <view wx:else>请升级微信版本</view>
+    </view>
+</view>
+<view class="list-item">
+    <image class="item-image" src="../../images/更多-购买记录.png"></image>
+    <text class="item-text">我的购买记录</text>
+  </view>
+  <view class="person-line"></view>
+  <view class="list-item">
+    <image class="item-image" src="../../images/我的收藏.png"></image>
+    <text class="item-text">我的收藏</text>
+  </view>
+  <view class="person-line"></view>
+  <view class="list-item">
+    <image class="item-image" src="../../images/会员充值.png"></image>
+    <text class="item-text">会员充值</text>
+  </view>
+  <view class="person-line"></view>
+  <view class="list-item">
+    <image class="item-image" src="../../images/个人资料.png"></image>
+    <text class="item-text">个人资料</text>
+  </view>
+  <view class="person-line"></view>
+  
+ <view class="separate"></view>
+

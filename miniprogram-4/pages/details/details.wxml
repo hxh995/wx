@@ -1,0 +1,6 @@
+ <form bindsubmit='submit' class='page_row'>
+ 
+ 
+    <input type="text" value=''name="id" placeholder='输入关键词' style='border:1px solid #ccc;height:30px;'/>
+    <button class='sousuo' form-type="submit">搜索</button>
+</form>

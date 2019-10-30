@@ -1,0 +1,2 @@
+<view>{{id}}</view>
+<image src="../../images/hust.jpg"></image>

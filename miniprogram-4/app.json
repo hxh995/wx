@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/test/test",
+    "pages/records/records",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/details/details",
+    "pages/user/user",
+    "pages/hust/hust"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#eee"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "./images/排行.png",
+        "iconPath": "./images/数据.png",
+        "pagePath": "pages/test/test",
+        "text": "排行榜"
+      },
+      {
+        "selectedIconPath": "./images/了解(1).png",
+        "iconPath": "./images/了解.png",
+        "pagePath": "pages/details/details",
+        "text": "了解大学"
+      },
+      {
+        "selecteIconPath": "./images/用户(1).png",
+        "iconPath": "./images/用户.png",
+        "pagePath": "pages/user/user",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
