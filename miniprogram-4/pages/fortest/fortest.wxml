@@ -1,0 +1,11 @@
+<!--pages/fortest/fortest.wxml-->
+<form bindsubmit="sumbit" bindreset="reset">
+<checkbox-group name='ck'>
+<checkbox value='banana'>banana</checkbox>
+<checkbox value='apple'>apple</checkbox>
+<checkbox value='shit'>shit</checkbox>
+</checkbox-group>
+<input>请输入密码</input>
+<button form-type="submit" type='primary'>提交</button>
+
+</form>

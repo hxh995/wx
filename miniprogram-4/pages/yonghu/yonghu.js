@@ -1,25 +1,49 @@
-// pages/details/details.js
+// pages/yonghu/yonghu.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    str_u_login:""
 
   },
-  submit: function (e) {
-    var that=this;
-    var formData=e.detail.value;
 
-    console.log(formData)
-   
-    },
-  
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that=this;
+  wx.getStorageInfo({
+    success: function(res) {
+      console.log(res.keys)
+      console.log(res.currentSize)
+      console.log(res.limitSize)
+    },
+  })
+    wx.getStorage({
+      key: 'u_login',
+      success: function(res) {
+        console.log(res.data)
+        that.setData({
+          str_u_login:res.data
+        })
+        console.log(that.data.str_u_login)
+        if(that.data.str_u_login=='yes')
+       { wx.navigateTo({
+          url: '/pages/user/user',
+        })}
+       
 
+      },
+      fail:function(e)
+      {
+        console.log(e)
+        wx.navigateTo({
+          url: '/pages/vip/vip',
+        })
+      }
+    })
   },
 
   /**
@@ -33,7 +57,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

@@ -1,0 +1,25 @@
+<form  bindsubmit="forsubmit" bindreset="reset">
+<view class='denglu'>
+<text class='shuoming'>请输入您的会员账号</text>
+  <view class='form-wap'>
+    <view class='flex-wap input-wrap'>
+    <text class='label'>账号</text>
+    <input value='{{str_u_name}}' id='username' name='uname' class='account-info-input'/>
+    </view>
+
+
+    <view class='flex-wap input-wrap'>
+    <text class='label'>密码</text>
+    <input value='' password id='mima' name='upwd' class='account-info-input'/>
+    </view>
+  </view>
+
+    <text class='shuoming'>请准确填写账户信息，有问题联系客服</text>
+    <button class='mysubmit' type='primary' form-type='submit'>登陆</button>
+    <button class='mysubmit' type='primary' bindtap='zhuce'>注册新用户</button>
+    <button open-type='getUserInfo' bindgetuserinfo='getWxInfo' lang='zh_CN' class='wx'>微信登陆</button>
+  </view>
+</form>
+<view>登陆状态:{{ str_u_login}}</view>
+<view>用户id：{{str_u_id}}</view>
+<view>用户名:{{str_u_name}}</view>

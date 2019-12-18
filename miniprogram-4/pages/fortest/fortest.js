@@ -1,4 +1,4 @@
-// pages/details/details.js
+// pages/fortest/fortest.js
 Page({
 
   /**
@@ -7,14 +7,10 @@ Page({
   data: {
 
   },
-  submit: function (e) {
-    var that=this;
-    var formData=e.detail.value;
+  sumbit:function(e){
+    console.log(e.detail.value)
 
-    console.log(formData)
-   
-    },
-  
+  },
   /**
    * 生命周期函数--监听页面加载
    */

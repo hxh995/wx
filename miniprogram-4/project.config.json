@@ -5,15 +5,23 @@
 	},
 	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
-	"compileType": "miniprogram",
+	"compileType": "plugin",
 	"libVersion": "2.9.0",
 	"appid": "wxe158fb3a51d317ec",
 	"projectname": "miniprogram-4",

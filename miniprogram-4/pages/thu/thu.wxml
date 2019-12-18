@@ -1,0 +1,12 @@
+<view class = "lli">清华大学</view>
+<view class="img">
+  <image mode='aspectFill'src="../../images/清华大学.jpg"class='img'></image>
+</view>
+<view>
+  <view class='add'>    地址：北京市海淀区</view>
+  <view class="time">    创办时间：1911年</view>
+  <view class="aa">    类型：综合类</view>
+  <view class="bb">    类别：公立大学</view>
+  <view class="code">    院校代码：10003</view>
+</view>
+

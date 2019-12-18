@@ -1,12 +1,22 @@
 {
   "pages": [
+    
+    
+    
     "pages/test/test",
     "pages/records/records",
     "pages/index/index",
     "pages/logs/logs",
     "pages/details/details",
+  
     "pages/user/user",
-    "pages/hust/hust"
+    "pages/thu/thu",
+    "pages/vip/vip",
+    "pages/fortest/fortest",
+    "pages/huiyuan/zhanghao/reg",
+    "pages/yonghu/yonghu"
+    
+
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -34,7 +44,7 @@
       {
         "selecteIconPath": "./images/用户(1).png",
         "iconPath": "./images/用户.png",
-        "pagePath": "pages/user/user",
+        "pagePath": "pages/yonghu/yonghu",
         "text": "个人中心"
       }
     ]

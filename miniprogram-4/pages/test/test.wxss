@@ -54,3 +54,36 @@ image {
 
 
 }
+.header
+{
+  border-left-width:2px;
+  border-left-style: solid;
+  border-left-color:limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  height:60rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  margin-top:10rpx;
+  margin-bottom: 10rpx;
+}
+.text-all
+{
+
+  color: green;
+  font-size:10px;
+}
+.content
+{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+
+}
+.content-item
+{
+  height:200rpx;
+  width:45%;
+  background-color: goldenrod;
+  margin: 2px;}

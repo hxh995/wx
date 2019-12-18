@@ -1,0 +1,44 @@
+/* pages/thu/thu.wxss */
+.lli{
+  color: rgb(30, 95, 192);
+  text-align: center;
+}
+.img{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.img image{
+  height: 400rpx;
+  width: 650rpx;
+}
+.add{
+  margin-top: 100rpx;
+  background: skyblue;
+  text-align: center;
+  color: snow;
+}
+.aa{
+  margin-top: 50rpx;
+  background: skyblue;
+  text-align: center;
+  color: snow;
+}
+.bb{
+  margin-top: 50rpx;
+  background:azure;
+  color:#000;
+  text-align: center;
+}
+.time{
+  margin-top: 50rpx;
+  background:azure;
+  color:#000;
+  text-align: center;
+}
+.code{
+  margin-top: 50rpx;
+  background: skyblue;
+  color: snow;
+  text-align: center;
+}

@@ -22,7 +22,7 @@
   <view class="person-line"></view>
   <view class="list-item">
     <image class="item-image" src="../../images/会员充值.png"></image>
-    <text class="item-text">会员充值</text>
+    <navigator class="item-text" url='/pages/vip/vip'>会员充值</navigator>
   </view>
   <view class="person-line"></view>
   <view class="list-item">

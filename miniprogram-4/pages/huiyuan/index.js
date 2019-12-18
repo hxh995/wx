@@ -1,4 +1,4 @@
-// pages/details/details.js
+// pages/huiyuan/index.js
 Page({
 
   /**
@@ -7,14 +7,7 @@ Page({
   data: {
 
   },
-  submit: function (e) {
-    var that=this;
-    var formData=e.detail.value;
 
-    console.log(formData)
-   
-    },
-  
   /**
    * 生命周期函数--监听页面加载
    */
