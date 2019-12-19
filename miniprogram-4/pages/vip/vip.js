@@ -21,14 +21,7 @@ Page({
     })
   },
   
- getWxInfo:function()
- {
-   wx.getUserInfo({
-     success:function(res){
-       console.log(res.userInfo)
-     }
-   })
- },
+ 
 
   /**
    * 生命周期函数--监听页面加载
@@ -103,6 +96,28 @@ Page({
     this.setData({
       str_wx_login:"yes"
     })
+    wx.login({
+      success(res)
+      {
+        
+        wx.request({
+          url:"https://api.weixin.qq.com/sns/jscode2session",
+          data:{
+            appid:"wxe158fb3a51d317ec",
+            secret:"d2030787c63c73e108cdb300ee176d42",
+            js_code:res.code,
+            grant_type:"authorization_code"
+          },
+          method:"GET",
+          success:function(res){
+            //获取用户的openid
+            console.log(res.data)
+          }
+
+        })
+      }
+
+    })
     wx.navigateTo({
       url: '/pages/user/user',
     })
@@ -119,6 +134,10 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+    console.log("页面被监听")
+    wx.switchTab({
+      url: "/pages/test/test"
+    })
 
   },
 

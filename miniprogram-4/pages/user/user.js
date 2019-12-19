@@ -33,5 +33,11 @@ Page({
     this.setData({
       isLogin: true
     });
+  },
+  onUnload: function () {
+    console.log("页面被监听")
+    wx.switchTab({
+      url: "/pages/test/test"
+    })
   }
 })

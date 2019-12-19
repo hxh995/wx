@@ -30,16 +30,26 @@ Page({
         })
         console.log(that.data.str_u_login)
         if(that.data.str_u_login=='yes')
-       { wx.navigateTo({
+       { 
+         
+         
+          wx.redirectTo({
           url: '/pages/user/user',
         })}
+        else{
+          wx.redirectTo({
+            url: '/pages/vip/vip',
+          })
+        }
        
 
       },
       fail:function(e)
       {
         console.log(e)
-        wx.navigateTo({
+        
+        
+        wx.redirectTo({
           url: '/pages/vip/vip',
         })
       }
